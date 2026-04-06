@@ -85,7 +85,7 @@ object FuncionesYEjsClase {
     Lazy val
   * */
   // Inmeditato
-  val normal = { println("Calculando normal..."); 10 }
+  val normal1 = { println("Calculando normal..."); 10 }
 
   // NO se calcula todavía
   lazy val perezoso = { println("Calculando perezoso..."); 20 }
@@ -112,11 +112,11 @@ object FuncionesYEjsClase {
   val lista = List(1, 2, 3, 4, 5, 6)
 
   // Sin vista: lista nueva temporal con el x2, y luego otra con filter
-  val normal = lista.map(_ * 2).filter(_ > 5)
+  val normal2 = lista.map(_ * 2).filter(_ > 5)
 
   // Con vista: No crea listas intermedias. Prepara la receta y solo la
   // ejecuta al final cuando llamamos a .toList
-  val optimizado = lista.view.map(_ * 2).filter(_ > 5).toList
+  val optimizadoVista = lista.view.map(_ * 2).filter(_ > 5).toList
 }
 
 object FoldRight {
