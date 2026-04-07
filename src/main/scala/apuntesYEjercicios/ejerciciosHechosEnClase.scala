@@ -1,5 +1,8 @@
-import scala.{+:, ::}
+package apuntesYEjercicios
+
 import scala.annotation.tailrec
+import scala.collection.immutable.::
+import scala.{+:, ::}
 
 object FuncionesYEjsClase {
   def map[A, B](l: List[A], f: A => B): List[B] = {
